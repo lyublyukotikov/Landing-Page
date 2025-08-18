@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "./fonts/fonts.css";
+
+.container-wrapper {
+  max-width: 1360px;
+  display: flex;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-primary: #ffffff;
+  --accent-color: #ffffff;
+}
+
+html {
+  color: var(--text-primary);
+}
+
+body {
+  background: var(--background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

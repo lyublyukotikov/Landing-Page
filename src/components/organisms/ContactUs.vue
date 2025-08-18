@@ -1,0 +1,34 @@
+<script setup lang="ts">
+import IImage from '@/components/atoms/IImage.vue'
+import ITitle from '@/components/atoms/ITitle.vue'
+import IButton from '@/components/atoms/IButton.vue'
+import contactUsLogo from '@/assets/contact-us-logo.png'
+import IconArrowRight from '@/components/atoms/IconArrowRight.vue'
+</script>
+<template>
+  <section
+    class="relative container-wrapper flex-col md:flex-row mt-20 lg:mt-45 pb-10 md:pb-0 items-center md:rounded-[40px] bg-[#5855EE] px-10 pt-15 gap-20"
+  >
+    <IImage
+      :src="contactUsLogo"
+      class="w-60 h-70 md:w-80 md:h-90 lg:w-100 lg:h-120 xl:w-161 xl:h-136"
+      alt="Contact Us"
+    />
+    <div class="flex flex-col gap-9 w-full md:max-w-119 items-center md:items-start">
+      <ITitle
+        class="text-white font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug text-center md:text-left"
+      >
+        <template #title>
+          Making <br class="hidden sm:block" />
+          Beautiful Things
+        </template>
+      </ITitle>
+      <IButton
+        class="px-9 py-5 rounded-xl text-lg text-[#5855EE] bg-white flex items-center justify-center md:justify-start"
+      >
+        Contact Us
+        <IconArrowRight />
+      </IButton>
+    </div>
+  </section>
+</template>
