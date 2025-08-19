@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import NavList from '@/components/molecules/NavList.vue'
 import ICloseButton from '@/components/atoms/ICloseButton.vue'
+import type { NavItem } from '@/composables/useNavigation' 
 defineProps<{
   isOpen: boolean
-  navItems: string[]
+  navItems: NavItem[]
   toggleMenu: () => void
 }>()
 </script>
@@ -13,7 +14,7 @@ defineProps<{
     <div v-if="isOpen" class="fixed inset-0 z-50 bg-[#5855EE] flex flex-col md:hidden">
       <ICloseButton :toggleMenu="toggleMenu" />
       <div class="flex flex-col items-center justify-center flex-1 gap-8 min-h-[80vh]">
-        <NavList :items="navItems" vertical />
+        <NavList :navItems="navItems" vertical />
       </div>
     </div>
   </transition>

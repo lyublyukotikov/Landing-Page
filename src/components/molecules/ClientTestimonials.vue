@@ -9,7 +9,7 @@ import ArrowNavigation from '@/components/molecules/ArrowNavigation.vue'
       <template #label> Testimonial </template>
     </ISectionLabel>
     <ITitle
-     class="text-black font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-6xl leading-snug text-center md:text-left mb-15"
+     class="text-black font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-6xl leading-snug text-center md:text-left mb-10"
 
     >
       <template #title>

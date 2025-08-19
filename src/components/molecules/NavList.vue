@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import NavItem from '@/components/molecules/NavItem.vue'
+import NavItemComponent from '@/components/molecules/NavItem.vue'
+import type { NavItem } from '@/composables/useNavigation'
 
 defineProps<{
-  items: string[]
+  navItems: NavItem[]
   vertical?: boolean
 }>()
 </script>
@@ -15,7 +16,12 @@ defineProps<{
         vertical ? 'flex flex-col gap-8 justify-center' : 'flex flex-row',
       ]"
     >
-      <NavItem v-for="item in items" :key="item" :text="item" />
+      <NavItemComponent
+        v-for="item in navItems"
+        :key="item.href"
+        :text="item.text"
+        :href="item.href"
+      />
     </ul>
   </div>
 </template>

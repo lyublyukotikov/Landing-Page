@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import IImage from '@/components/atoms/IImage.vue'
 import NavList from '@/components/molecules/NavList.vue'
 import HeaderActions from '@/components/molecules/HeaderActions.vue'
-import logo from '@/assets/logo-image.svg'
+import LogoAppIcon from '@/components/atoms/icons/LogoAppIcon.vue'
 import IButtonBurger from '@/components/atoms/IButtonBurger.vue'
 import MobileMenu from '@/components/molecules/MobileMenu.vue'
 import { ref } from 'vue'
+import { useNavigation } from '@/composables/useNavigation'
 
-defineProps<{
-  navItems: string[]
-}>()
+const { navItems } = useNavigation()
 
 const isMenuOpen = ref(false)
 const toggleMenu = () => {
@@ -18,18 +16,23 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="container-wrapper h-[90px] items-center bg-[#5855EE] md:mt-10 md:rounded-t-[40px]">
-    <div class="mx-auto mt-7 flex h-15 w-full max-w-292 items-center justify-between">
-      <IImage :src="logo" class="w-20 sm:w-24 md:w-31" />
-      <NavList :items="navItems" class="hidden md:flex" />
-      <div class="flex items-center">
+  <header
+    class="container-wrapper flex h-[90px] items-center bg-[#5855EE] md:mt-10 md:rounded-t-[40px]"
+  >
+    <div class="mx-auto flex w-full max-w-292 items-center justify-between h-15 mt-7">
+      <LogoAppIcon class="w-20 sm:w-24 md:w-31" />
+      <NavList :navItems="navItems" class="hidden md:flex" />
+
+      <div class="flex items-center gap-4">
         <IButtonBurger class="md:hidden" @click="toggleMenu" />
         <HeaderActions />
       </div>
     </div>
+
     <MobileMenu :isOpen="isMenuOpen" :navItems="navItems" :toggleMenu="toggleMenu" />
   </header>
 </template>
+
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {

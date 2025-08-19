@@ -1,37 +1,10 @@
 <template>
-  <button class="burger-button" type="button" />
+  <button
+    type="button"
+    class="relative cursor-pointer flex aspect-square w-12 items-center justify-center rounded-md border-0 bg-transparent p-0 text-white hover:bg-white/10 sm:w-9"
+  >
+    <span
+      class="relative block h-0.5 w-1/2 rounded bg-current before:absolute before:-top-2 before:block before:h-0.5 before:w-full before:rounded before:bg-current after:absolute after:top-2 after:block after:h-0.5 after:w-full after:rounded after:bg-current"
+    />
+  </button>
 </template>
-<style scoped lang="scss">
-.burger-button {
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  color: #ffffff;
-  border: none;
-  width: 48px;
-  aspect-ratio: 1;
-  position: relative;
-  border-radius: 7px;
-}
-
-@media (max-width: 640px) {
-  .burger-button {
-    width: 36px;
-  }
-}
-
-.burger-button::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  content: '';
-  width: 50%;
-  height: 2px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow:
-    0 -8px,
-    0 8px;
-}
-</style>

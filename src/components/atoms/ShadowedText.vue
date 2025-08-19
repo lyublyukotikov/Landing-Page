@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import IImage from '@/components/atoms/IImage.vue'
-import shadowHeadLine from '@/assets/shadow-head-line.svg'
 
 defineProps<{
   lines: string[]
@@ -10,16 +9,14 @@ defineProps<{
 <template>
   <div>
     <h1
-      class="text-white font-bold leading-tight inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+      class="inline-block leading-tight font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
     >
       <span class="relative inline-block">
         <span>{{ lines[0] }}</span>
-        <IImage :src="shadowHeadLine" alt="Shadow" class="shadow-img" />
+        <IImage src="/assets/shadow-head-line-image.svg" alt="Shadow" class="shadow-img" />
       </span>
-      <span>
-        {{ lines[1] }}
-      </span>
-     <br class="hidden sm:block" />
+      <span>{{ lines[1] }}</span>
+      <br class="hidden sm:block" />
       {{ lines[2] }}
     </h1>
   </div>
@@ -34,6 +31,5 @@ defineProps<{
   height: 100%;
   object-fit: contain;
   z-index: 0;
-  pointer-events: none;
 }
 </style>
