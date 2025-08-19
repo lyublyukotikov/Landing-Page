@@ -2,7 +2,7 @@
 import IImage from '@/components/atoms/core/IImage.vue'
 import ITitle from '@/components/atoms/core/ITitle.vue'
 import IButton from '@/components/atoms/core/IButton.vue'
-import ArrowRightIcon from '@/components/atoms/icons/ArrowLeftIcon.vue'
+import ContactUsArrowIcon from '@/components/atoms/icons/ContactUsArrowIcon.vue'
 </script>
 <template>
   <section
@@ -26,7 +26,7 @@ import ArrowRightIcon from '@/components/atoms/icons/ArrowLeftIcon.vue'
         class="px-9 py-5 rounded-xl text-lg text-[#5855EE] bg-white flex items-center justify-center md:justify-start"
       >
         Contact Us
-        <ArrowRightIcon />
+        <ContactUsArrowIcon />
       </IButton>
     </div>
   </section>
