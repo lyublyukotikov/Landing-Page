@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import IImage from '@/components/atoms/IImage.vue'
-import IButton from '@/components/atoms/IButton.vue'
-import IconArrowRight from '@/components/atoms/IconArrowRight.vue'
+import IImage from '@/components/atoms/core/IImage.vue'
+import IButton from '@/components/atoms/core/IButton.vue'
+import IconArrowRight from '@/components/atoms/icons/IconArrowRight.vue'
 </script>
 <template>
   <section
-    class="relative bg-[#5855EE] container-wrapper pt-15 pb-100 md:rounded-b-[40px] flex-col items-center"
+    class="relative container-wrapper bg-[#5855EE] pt-15 pb-100 md:rounded-b-[40px] flex-col items-center"
   >
     <IImage
-      src="/assets/cloud-right-image.png"
+      src="/Landing-Page/assets/cloud-right-image.png"
       alt="Cloud Right"
       class="absolute cloud-right-image h-25 w-45 md:h-40 md:w-70"
     />
     <IImage
-      src="/assets/cloud-left-image.png"
+      src="/Landing-Page/assets/cloud-left-image.png"
       alt="Cloud Right"
       class="absolute cloud-left-image"
       width="200px"
@@ -24,11 +24,15 @@ import IconArrowRight from '@/components/atoms/IconArrowRight.vue'
       <IconArrowRight />
     </IButton>
     <IImage
-      src="/assets/computer-image.png"
+      src="/Landing-Page/assets/computer-image.png"
       alt="Computer Image"
       class="computer-image h-90 w-100 sm:h-100 sm:w-120 md:h-170 md:w-190"
     />
-    <IImage src="/assets/shadow-image.svg" alt="Shadow" class="absolute shadow-image w-49 h-28" />
+    <IImage
+      src="/Landing-Page/assets/shadow-image.svg"
+      alt="Shadow"
+      class="absolute shadow-image w-49 h-28"
+    />
   </section>
 </template>
 <style scoped lang="scss">

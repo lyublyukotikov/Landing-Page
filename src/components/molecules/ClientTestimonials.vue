@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ISectionLabel from '@/components/atoms/ISectionLabel.vue'
-import ITitle from '@/components/atoms/ITitle.vue'
+import ISectionLabel from '@/components/atoms/core/ISectionLabel.vue'
+import ITitle from '@/components/atoms/core/ITitle.vue'
 import ArrowNavigation from '@/components/molecules/ArrowNavigation.vue'
 </script>
 <template>
@@ -9,8 +9,7 @@ import ArrowNavigation from '@/components/molecules/ArrowNavigation.vue'
       <template #label> Testimonial </template>
     </ISectionLabel>
     <ITitle
-     class="text-black font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-6xl leading-snug text-center md:text-left mb-10"
-
+      class="text-black font-bold text-4xl sm:text-5xl lg:text-4xl xl:text-6xl leading-snug text-center md:text-left mb-10"
     >
       <template #title>
         What Say Our <br />

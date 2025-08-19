@@ -24,3 +24,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+img {
+  pointer-events: none;
+}

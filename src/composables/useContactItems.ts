@@ -1,6 +1,6 @@
-import IPhoneContact from '@/components/atoms/IPhoneContact.vue'
-import IEmailContact from '@/components/atoms/IEmailContact.vue'
-import IMapMark from '@/components/atoms/IMapMark.vue'
+import IPhoneContact from '@/components/atoms/icons/PhoneContactIcon.vue'
+import IEmailContact from '@/components/atoms/icons/EmailContactIcon.vue'
+import IMapMark from '@/components/atoms/icons/MapMarkIcon.vue'
 
 export function useContactItems() {
   const contactItems = [

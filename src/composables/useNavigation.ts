@@ -1,9 +1,5 @@
 import { ref } from 'vue'
-
-export interface NavItem {
-  text: string
-  href: string
-}
+import type { NavItem } from '@/interfaces/nav-item.interface'
 
 export function useNavigation() {
   const navItems = ref<NavItem[]>([

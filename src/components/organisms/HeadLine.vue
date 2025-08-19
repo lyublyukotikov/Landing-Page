@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import ShadowedText from '@/components/atoms/ShadowedText.vue'
+import IShadowedText from '@/components/atoms/core/IShadowedText.vue'
 
 const lines = ['De', 'signing Future For', 'Your Business']
 </script>
 
 <template>
   <section class="container-wrapper justify-center text-center pt-15 md:pt-22 bg-[#5855EE]">
-    <ShadowedText :lines="lines" />
+    <IShadowedText :lines="lines" />
   </section>
 </template>

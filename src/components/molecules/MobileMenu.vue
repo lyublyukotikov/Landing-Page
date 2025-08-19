@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import NavList from '@/components/molecules/NavList.vue'
-import ICloseButton from '@/components/atoms/ICloseButton.vue'
-import type { NavItem } from '@/composables/useNavigation' 
+import ICloseButton from '@/components/atoms/core/ICloseButton.vue'
+import type { NavItem } from '@/interfaces/nav-item.interface'
+
 defineProps<{
   isOpen: boolean
   navItems: NavItem[]

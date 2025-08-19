@@ -1,20 +1,15 @@
 <script setup lang="ts">
 import CardItem from '@/components/molecules/CardItem.vue'
-import type { Card } from '@/composables/useCards'
+import { useCards } from '@/composables/useCards'
 
-defineProps<{
-  cards: Card[]
-}>()
+const { cards } = useCards()
 </script>
 
 <template>
   <div class="cards-carousel flex flex-nowrap justify-center overflow-x-auto gap-8 pb-10">
-    <CardItem
-      v-for="(card, index) in cards"
-      :key="index"
-      :card="card"
-      class="flex-shrink-0"
-    />
+     <div class="shrink-0 w-90"></div>
+    <CardItem v-for="(card, index) in cards" :key="index" :card="card" class="flex-shrink-0" />
+     <div class="shrink-0 w-5"></div>
   </div>
 </template>
 

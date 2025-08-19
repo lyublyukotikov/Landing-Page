@@ -26,7 +26,7 @@ import FooterApp from '@/components/organisms/FooterApp.vue'
     <CompanySponsored />
     <div
       class="relative bg-cover bg-center bg-no-repeat"
-      :style="{ backgroundImage: 'url(/assets/background-image.png)' }"
+      :style="{ backgroundImage: 'url(/Landing-Page/assets/background-image.png)' }"
     >
       <div class="relative z-10">
         <ContactUsSection />

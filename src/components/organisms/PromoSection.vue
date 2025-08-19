@@ -1,23 +1,19 @@
 <script setup lang="ts">
 import AboutBlock from '@/components/molecules/AboutBlock.vue'
-import IImage from '@/components/atoms/IImage.vue'
+import IImage from '@/components/atoms/core/IImage.vue'
 </script>
 <template>
   <section
     class="relative flex flex-col xl:flex-row justify-center items-center container-wrapper mt-40 sm:mt-90 md:mt-110 lg:mt-129 sm:gap-8 lg:gap-15"
   >
     <IImage
-      src="/assets/gradient-background-image.svg"
+      src="/Landing-Page/assets/gradient-background-image.svg"
       alt="gradient"
       class="gradient-background-image w-100 h-65"
     />
-    
-    <IImage
-      src="/assets/chart-image.svg"
-      alt="chart"
-      class="w-150 h-120"
-    />
-    
+
+    <IImage src="/Landing-Page/assets/chart-image.svg" alt="chart" class="w-150 h-120" />
+
     <AboutBlock />
   </section>
 </template>

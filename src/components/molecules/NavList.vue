@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import NavItemComponent from '@/components/molecules/NavItem.vue'
-import type { NavItem } from '@/composables/useNavigation'
+import type { NavItem } from '@/interfaces/nav-item.interface'
 
 defineProps<{
   navItems: NavItem[]

@@ -1,15 +1,8 @@
-export interface Card {
-  image: string
-  title: string
-  description: string
-  alt: string
-  bgColor: string
-}
-
+import type { Card } from '@/interfaces/card.interface'
 export function useCards() {
   const cards: Card[] = [
     {
-      image: '/assets/contact-us-image.png',
+      image: '/Landing-Page/assets/contact-us-image.png',
       title: 'User Interface Design',
       description:
         'There are on many variations of passages majority available but the have suffered.',
@@ -17,7 +10,7 @@ export function useCards() {
       bgColor: '#FFF7ED',
     },
     {
-      image:'/assets/marker-analysis-image.png',
+      image:'/Landing-Page/assets/marker-analysis-image.png',
       title: 'Market Analysis',
       description:
         'There are on many variations of passages majority available but the have suffered.',
@@ -25,7 +18,7 @@ export function useCards() {
       bgColor: '#F2F3FF',
     },
     {
-      image:'/assets/marker-analysis-image.png',
+      image:'/Landing-Page/assets/marker-analysis-image.png',
       title: 'Web Development',
       description:
         'There are on many variations of passages majority available but the have suffered.',
@@ -33,7 +26,7 @@ export function useCards() {
       bgColor: '#FFF0F3',
     },
     {
-      image: '/assets/web-development-image.png',
+      image: '/Landing-Page/assets/web-development-image.png',
       title: 'Web Development',
       description:
         'There are on many variations of passages majority available but the have suffered.',

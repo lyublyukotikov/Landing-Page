@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ISectionLabel from '@/components/atoms/ISectionLabel.vue'
-import ITitle from '@/components/atoms/ITitle.vue'
+import ISectionLabel from '@/components/atoms/core/ISectionLabel.vue'
+import ITitle from '@/components/atoms/core/ITitle.vue'
 import ContactInfoList from '@/components/molecules/ContactInfoList.vue'
-import IImage from '@/components/atoms/IImage.vue'
+import IImage from '@/components/atoms/core/IImage.vue'
 import ContactUsForm from '@/components/molecules/ContactUsForm.vue'
 </script>
 <template>
@@ -26,7 +26,7 @@ import ContactUsForm from '@/components/molecules/ContactUsForm.vue'
       <ContactInfoList />
 
       <IImage
-        src="/assets/contact-us-background-image.png"
+        src="/Landing-Page/assets/contact-us-background-image.png"
         alt="Shadow"
         class="absolute contact-us-background-image"
       />

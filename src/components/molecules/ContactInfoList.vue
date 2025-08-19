@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useContactItems } from '@/composables/useContactItems'
-import IParagraph from '@/components/atoms/IParagraph.vue'
+import IParagraph from '@/components/atoms/core/IParagraph.vue'
 
 const { contactItems } = useContactItems()
 </script>

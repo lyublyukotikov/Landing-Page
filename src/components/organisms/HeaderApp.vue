@@ -2,7 +2,6 @@
 import NavList from '@/components/molecules/NavList.vue'
 import HeaderActions from '@/components/molecules/HeaderActions.vue'
 import LogoAppIcon from '@/components/atoms/icons/LogoAppIcon.vue'
-import IButtonBurger from '@/components/atoms/IButtonBurger.vue'
 import MobileMenu from '@/components/molecules/MobileMenu.vue'
 import { ref } from 'vue'
 import { useNavigation } from '@/composables/useNavigation'
@@ -24,8 +23,7 @@ const toggleMenu = () => {
       <NavList :navItems="navItems" class="hidden md:flex" />
 
       <div class="flex items-center gap-4">
-        <IButtonBurger class="md:hidden" @click="toggleMenu" />
-        <HeaderActions />
+        <HeaderActions @toggle-menu="toggleMenu" />
       </div>
     </div>
 
