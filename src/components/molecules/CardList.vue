@@ -7,9 +7,9 @@ const { cards } = useCards()
 
 <template>
 <div class="cards-carousel flex flex-nowrap overflow-x-auto gap-8 pb-10">
-  <div class="shrink-0 w-10"></div> <!-- только справа -->
+  <div class="shrink-0 w-10"></div>
   <CardItem v-for="(card, index) in cards" :key="index" :card="card" class="flex-shrink-0" />
-  <div class="shrink-0 w-10"></div> <!-- только справа -->
+  <div class="shrink-0 w-10"></div>
 </div>
 </template>
 
